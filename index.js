@@ -1,11 +1,11 @@
 console.log("Init Twilio");
 const accountSid = "AC244dbce5ea68a7cb404063081b6a26fe";
-const authToken = "80a9a749e621065c8b86c223812fbf2b";
+const authToken = "dfc6adf10f72d209996546d69e3bfcfd";
 const client = require('twilio')(accountSid, authToken);
 client.messages
     .create({
         from: 'whatsapp:+12543213630',
-        body: 'Hello there Nodejs!',
+        body: 'Probando 1,2,3,4',
         to: 'whatsapp:+51989123131'
     })
     .then(message => console.log(message));
